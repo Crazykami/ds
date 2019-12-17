@@ -1,0 +1,120 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    
+    
+<link rel="apple-touch-icon" sizes="57x57" href="	images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="	images/aapple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="	images/aapple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="	images/aapple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="	images/aapple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="	images/aapple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="	images/aapple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="	images/aapple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="	images/aapple-icon-180x180.png">
+
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    
+    
+    
+    
+    
+     <!-- CODELAB: Add iOS meta tags and icons -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Weather PWA">
+<link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+  <!-- CODELAB: Add description here -->
+<meta name="description" content="A sample pwa">  
+ <!-- CODELAB: Add meta theme-color -->
+<meta name="theme-color" content="#2F3BA2" />   
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terence's anti-Productivity App</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body id="body">
+
+
+
+    <div id="main"></div>
+<label for="view"><input type="radio" class="inputs" name="view" onclick="view(1)"> text</label>    
+<label for="view"><input  type="radio" class="inputs" name="view"  onclick="view(2)"> image</label>    
+    <label for="view"><input type="radio" class="inputs"  name="view"  onclick="view(3)"> audio</label>    
+		
+		
+    
+    <audio id="music" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2FBackstreet%20BoysI%20Want%20It%20That%20Way(%20Lyrics).mp3?v=1574809323875" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <audio id="music1" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2F90.wav?v=1574981311379" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <audio id="music2" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2FBag_Raiders_-_Shooting_Stars%5BMp3Converter.net%5D.mp3?v=1574981315060" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <audio id="music3" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2FCaravan%20Palace%20-%20Lone%20Digger.mp3?v=1574981337158" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <audio id="music4" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2FRasputin.wav?v=1574981394037" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <audio id="music5" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2FRick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up.mp3?v=1574981397515" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <audio id="music6" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2FRoundabout%20(Remastered%20Version).mp3?v=1574981410838" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <audio id="music7" ><source src="https://cdn.glitch.com/0c598f5c-8d43-4e17-b9ed-5d5971ce4e76%2FTom%20Jones%20It%20s%20Not%20Unusual%20with%20Lyrics.wav?v=1574981428105" type="audio/mpeg">Your browser does not support the audio element.</audio>
+    <div class="hidden" id="text"> 
+      <div class="button" onclick="loadJ1()">Chuck</div>
+      <div class="button" onclick="loadJ2()">Chuck</div>
+      <div class="button" onclick="loadJ3()">Joke</div>
+      <div class="button" onclick="loadtr()">Trivia</div>
+      <div class="button" onclick="loadan()">Anime</div>
+      <div class="button" onclick="loadfa()">Fact</div>
+      <div class="button" onclick="loadcf()">Cat Facts</div>
+      <div class="button" onclick="loaddf()">Dog Facts</div>
+      <div class="button" onclick="loadcf2()">Cat Facts</div>
+      <div class="button" onclick="loadpf()">Panda</div>
+      <div class="button" onclick="loadff()">Fox Facts</div>
+      <div class="button" onclick="loadbf()">Bird Facts</div>
+      <div class="button" onclick="loadkf()">Koala fact</div>
+      <div class="button" onclick="loadqu()">Quote</div>
+    <div class="button" onclick="loadsq()">Simpson Quote</div>
+    </div>
+    <div class="hidden" id="image">
+      <div class="button" onclick="loaddp()">Dogey</div>
+      <div class="button" onclick="loadmeme()">meme</div>
+      <div class="button" onclick="loadpika()">Pika</div>
+      <div class="button" onclick="loadhug()">Hug</div>
+      <div class="button" onclick="loadpat()">Pat</div>
+      <div class="button" onclick="loadwink()">(｡•̀ᴗ-)✧</div>
+      <div class="button" onclick="loadkoala()">koala</div>
+      <div class="button" onclick="loadpanda()">Panda</div>
+      <div class="button" onclick="loadrpanda()">Red Panda</div>
+      <div class="button" onclick="loadbirb()">BIRB</div>
+      <div class="button" onclick="loadfox()">Foxy</div>
+      <div class="button" onclick="loaddog()">doge</div>
+      <div class="button" onclick="loadcat()">Meow</div>
+
+    </div>
+    <div class="hidden" id="audio">
+      <div class="button" onclick="music(1)">BSB</div>
+      <div class="button" onclick="music(2)">90</div>
+      <div class="button" onclick="music(3)">Shot Stars</div>
+      <div class="button" onclick="music(4)">LD</div>
+      <div class="button" onclick="music(5)">RA RA</div>
+      <div class="button" onclick="music(6)">RR</div>
+      <div class="button" onclick="music(7)">yes</div>
+      <div class="button" onclick="music(8)">Unusualn't</div>
+    </div>
+   
+    
+   
+   
+
+    
+    
+    <!--<  div class="button" onclick="loadload()">yeet</div>  -->
+    <script src="client.js"></script>
+   <script src="addserviceworker.js"></script>
+    <script src="service-worker.js"></script>
+  </body>
+</html>
